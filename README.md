@@ -15,11 +15,11 @@ Ten projekt realizuje zadanie analizy sentymentu tweetów z wykorzystaniem zbior
 
 ```
 project/
-├── README.md                      # Ten plik
-├── requirements.txt               # Wymagane biblioteki
-├── trump_sentiment_analysis.py    # Główny skrypt analizy
+├── README.md                     # Ten plik
+├── requirements.txt              # Wymagane biblioteki
+├── trump_sentiment_analysis.py   # Główny skrypt analizy
 ├── data_downloader.py            # Skrypt do pobierania danych
-├── sentiment_analysis_notebook.ipynb  # Interaktywny notebook Jupyter
+├── SPRAWOZDANIE.md               # Sprawozdanie
 └── data/                         # Folder na dane (tworzony automatycznie)
     └── trump_tweets_sample.csv   # Przykładowe dane
 ```
@@ -69,11 +69,6 @@ python data_downloader.py
 5. Uruchom główną analizę:
 ```bash
 python trump_sentiment_analysis.py
-```
-
-### Opcja 3: Interaktywny Jupyter Notebook
-```bash
-jupyter notebook sentiment_analysis_notebook.ipynb
 ```
 
 ## Metodologia
