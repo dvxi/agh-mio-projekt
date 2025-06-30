@@ -101,16 +101,6 @@ python trump_sentiment_analysis.py
 - `shap_summary.png` - Wykres podsumowujący SHAP
 - `word_clouds.png` - Chmury słów dla różnych sentymentów
 
-### Metryki wydajności
-- Dokładność modelu: ~0.75-0.85 (zależnie od danych)
-- Precision/Recall dla każdej klasy
-- Macierz pomyłek z wizualizacją
-
-### Wnioski z analizy SHAP
-- Identyfikacja najważniejszych słów/fraz
-- Zrozumienie bias modelu
-- Wyjaśnienie indywidualnych decyzji
-
 ## Struktura kodu
 
 ### `trump_sentiment_analysis.py`
@@ -128,31 +118,6 @@ Narzędzia do pobierania danych:
 - Konfiguracja API Kaggle
 - Pobieranie zbioru danych
 - Tworzenie przykładowych danych (fallback)
-
-## Interpretacja wyników SHAP
-
-### Wartości SHAP
-- **Pozytywne wartości:** cechy zwiększające prawdopodobieństwo danej klasy
-- **Negatywne wartości:** cechy zmniejszające prawdopodobieństwo
-- **Wartość bezwzględna:** siła wpływu cechy
-
-### Typy analiz
-1. **Summary Plot:** globalna ważność cech
-2. **Individual Analysis:** wyjaśnienie konkretnych predykcji
-3. **Feature Importance:** ranking najważniejszych słów
-
-## Ograniczenia i dalszy rozwój
-
-### Obecne ograniczenia
-- Automatyczne etykietowanie może być niedoskonałe
-- Brak uwzględnienia kontekstu temporalnego
-- Ograniczona interpretacja ironii i sarkazmu
-
-### Możliwe usprawnienia
-1. Użycie pre-trained models (BERT, RoBERTa)
-2. Analiza temporalna zmian sentymentu
-3. Włączenie metadanych (retweets, likes)
-4. Walidacja krzyżowa z różnymi algorytmami
 
 ## Przykłady użycia
 
@@ -173,15 +138,6 @@ analyzer.setup_shap_analysis()
 analyzer.analyze_with_shap()
 analyzer.analyze_individual_predictions([0, 1, 2])
 ```
-
-## Wymagania sprawozdania
-
-Zgodnie z wymaganiami projektu, sprawozdanie powinno zawierać:
-1. **Opis zadania** (1-2 strony)
-2. **Metodologia** (1-2 strony) 
-3. **Wyniki eksperymentów** (2-3 strony)
-4. **Analiza SHAP** (2-3 strony)
-5. **Wnioski i dyskusja** (1 strona)
 
 ## Autor
 
